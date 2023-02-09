@@ -18,38 +18,38 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+            <li class="nav-item ms-5">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+            <li class="nav-item ms-5">
+              <a class="nav-link active" aria-current="page" href="#about">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Experience</a>
+            <li class="nav-item ms-5">
+              <a class="nav-link active" aria-current="page" href="#work">Work</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+            <li class="nav-item ms-5">
+              <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <section id="home" class="home container">
-      <div class="row d-flex align-items-center">
-        <div class="col-8">
+      <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+        <div class="col-12 col-md-8">
           <h3 class="fw-semibold">hi! i am</h3>
           <h1 class="fw-bold">Andi Lau</h1>
           <p>I'm Frontand/Backend Develover from Indonesia</p>
           <a class="btn button" href="foto/IMG-20230129-WA0006_waifu2x_photo_noise2_scale.pngs" download> Resume</a>
         </div>
-        <div class="col-4">
-          <img src="foto/IMG-20230129-WA0006_waifu2x_photo_noise2_scale.png" alt="foto saya" />
+        <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+          <img src="foto/IMG-andi.png" alt="foto saya" class="rounded-circle" />
         </div>
       </div>
-      <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-        <a href="#about" class="text-decoration-none text-dark">More Info</a>
+      <a href="#about" class="arrow w-100 d-flex align-items-center flex-column mt-5 text-decoration-none text-dark">
+        <div>More Info</div>
         <img id="arrow" src="foto/free-arrow-down-.png" alt="Arrow Icon" />
-      </div>
+      </a>
     </section>
     <section id="about" class="about container">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, illum optio facere aliquid et voluptatibus consectetur voluptatem eos, ut earum amet neque delectus ratione aspernatur pariatur. Culpa doloribus veritatis tenetur.</p>
@@ -101,13 +101,13 @@
     </section>
     <section id="work" class="work container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col">
+        <div class="col-12 col-md-6">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae placeat deserunt velit reprehenderit sit atque accusantium, nihil animi. Aliquid impedit pariatur, praesentium maxime eveniet minima similique repellendus nihil eos
             quas?
           </p>
         </div>
-        <div class="col work-img">
+        <div class="col-12 col-md-5 work-img">
           <div id="work-3" class="work-img-item">
             <img src="foto/work-image3.jpg" alt="foto3" />
           </div>
@@ -121,28 +121,28 @@
       </div>
     </section>
     <section id="contact" class="contact container">
-      <div class="row d-flex align-items-center gap-5">
-        <div class="col">
+      <div class="row d-flex align-items-center gap-5 col-md">
+        <div class="col-12 col-md 6">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet sequi omnis dolorum perspiciatis voluptates inventore, aspernatur ut harum voluptatibus, ullam mollitia, natus fuga debitis? Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Ipsa voluptatem quia dolore natus, accusantium temporibus!
           </p>
-          <div class="row">
+          <div class="row mt-5">
             <div class="col">
-              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-facebook fs-3 text-primary"></i>
               <p>Andi Lau</p>
             </div>
             <div class="col">
-              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-twitter fs-3 text-primary-emphasis"></i>
               <p>Andi Lau</p>
             </div>
             <div class="col">
-              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-instagram fs-3 text-danger-emphasis"></i>
               <p>Andi Lau</p>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-5">
           <form class="contact-form" onsubmit="onFormSubmit(event)">
             <div class="mb-3">
               <label for="inp_email" class="form-label">Email address</label>

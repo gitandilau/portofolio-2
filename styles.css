@@ -17,6 +17,9 @@ section::before {
 .navbar {
   box-shadow: 0 0 0 4px rgb(0, 0, 0, 0.25);
 }
+.nav-link:hover {
+  border-bottom: 1px solid black;
+}
 .home h1 {
   font-size: 74px;
 }
@@ -34,10 +37,7 @@ section::before {
 }
 
 .col-4 img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-  border-radius: 30%;
+  width: 100%;
 }
 .home .arrow img {
   width: 60px;
@@ -119,6 +119,18 @@ section::before {
 }
 .form label {
   font-weight: 700;
+}
+@media only screen and (max-width: 576px) {
+  .home {
+    margin-top: 50px;
+  }
+  section::before {
+    left: 12px;
+    font-size: 64px;
+  }
+  .home img {
+    width: 50%;
+  }
 }
 
 @keyframes UpDown {
