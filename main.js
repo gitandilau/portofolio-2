@@ -10,6 +10,26 @@ function toggleDetail(e) {
   $(detail).slideToggle();
 }
 
+function onFormSubmit(e) {
+  e.preventDefault(); // unutk menghindari terjadinya loading
+  const email = $('#inp_email');
+  const subject = $('#inp_subject');
+  const message = $('#inp_message');
+
+  if (!$(email).val()) {
+    alert('email is required');
+  } else if (!$(subject).val()) {
+    alert('subject is required');
+  } else if (!$(message).val()) {
+    alert('message is required');
+  } else {
+    $(message).val('');
+    $(message).val('');
+    $(message).val('');
+    alert('Form Submitted');
+  }
+}
+
 // {
 //   const target = $(event.target);
 //   if ($(target).hasClass('active')) {
